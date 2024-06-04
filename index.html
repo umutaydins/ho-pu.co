@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+    .squada-one-regular {
+      font-family: "Squada One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'Squad One';
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      font-family: "Oswald", sans-serif;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+    }
+
+    .logo img {
+
+      width: 140px;
+      height: 120px;
+      margin-top: -45px;
+    }
+
+    .page-links {
+      font-family: "";
+
+      display: flex;
+      font-weight: 500;
+      color: white;
+    }
+
+    .page-links a {
+      font-family: "Oswald";
+      font-weight: 1200;
+      font-size: 20px;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .flat-button {
+
+
+      border: 2px solid red;
+      color: red;
+      background-color: transparent;
+      transition: color 0.3s, background-color 0.3s;
+      padding: 10px 20px;
+      font-family: "Oswald";
+      text-decoration: none;
+
+    }
+
+    .flat-button:hover {
+      color: white;
+      background-color: red;
+    }
+
+    .container {
+      justify-content: center;
+      align-items: center;
+      max-width: 800px;
+      align-self: center;
+      -ms-grid-row-align: center;
+      margin: 0 auto;
+      display: flexbox;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* Centerize text inside the container */
+
+      align-self: center;
+      /* Centerize text inside the container */
+    }
+
+    .container span {
+      font-family: "Oswald", serif;
+    }
+
+    .main {
+      font-family: "Oswald", sans-serif;
+      margin-top: 8em;
+
+      h1 {
+        font-size: 2.5em;
+      }
+    }
+
+
+    
+    @media only screen and (max-width: 768px) {
+      .page-links {
+        font-family: "Oswald";
+
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Height of the header */
+        left: -20px;
+        width: 100%;
+        background-color: black;
+        text-align: right;
+        z-index: 1;
+
+      }
+
+      .page-links a {
+        font-family: "Oswald";
+
+      }
+
+      .page-links a {
+        font-family: "Oswald";
+
+        margin: 10px 0;
+      }
+
+      .page-links.show {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+
+    @media only screen and (min-width: 769px) {
+      .menu-button {
+        display: none;
+      }
+
+      .page-links {
+        margin-top: -50px;
+        font-family: "Oswald";
+
+        display: flex;
+      }
+    }
+
+    .h1 {
+      font-size: 2.5em;
+
+    }
+
+
+    a {
+      font-family: 'Squada One';
+      font-size: 20px;
+      font-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/images/hopulogo.svg" alt="Logo">
+    </div>
+    <nav class="page-links">
+      <a href="index.html">Home</a>
+      <a href="artists.html">Artists</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-button"><i class="fas fa-bars fa-lg"></i></div>
+  </header>
+
+  <div class="container">
+    <div class="main">
+      <h1>
+        Global Talent Agency <br>for<br> Electronic Music
+      </h1>
+      <br>
+      <br>
+      <a href="artists.html" class="flat-button text-center max-w-[200px] font-bold">Entire Roster</a>
+    </div>
+  </div>
+
+  <script>
+    const pageLinks = document.querySelector('.page-links');
+    const menuButton = document.querySelector('.menu-button');
+    menuButton.addEventListener('click', () => {
+      pageLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+
+</html>

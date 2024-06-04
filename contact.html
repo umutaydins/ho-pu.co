@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ho-Pu'</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+
+    .squada-one-regular {
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'Oswald';
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    header {
+      font-family: "Oswald", sans-serif;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+    }
+
+    .logo img {
+
+      width: 140px;
+      height: 120px;
+      margin-top: -45px;
+    }
+
+    .page-links {
+      font-family: "Oswald";
+
+      display: flex;
+      font-weight: 500;
+      color: white;
+    }
+
+    .page-links a {
+      font-family: "Oswald";
+      font-weight: 1200;
+      font-size: 20px;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+    }
+
+
+    .flat-button {
+
+
+      border: 2px solid red;
+      color: red;
+      background-color: transparent;
+      transition: color 0.3s, background-color 0.3s;
+      padding: 20px 30px;
+      font-family: "Oswald";
+      text-decoration: none;
+
+    }
+
+    .flat-button:hover {
+      color: white;
+      background-color: red;
+    }
+
+
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+      .page-links {
+        font-family: "Oswald";
+
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Height of the header */
+        left: -20px;
+        width: 100%;
+        background-color: black;
+        text-align: right;
+        z-index: 1;
+
+      }
+
+      .page-links a {
+        font-family: "Oswald";
+
+      }
+
+      .page-links a {
+        font-family: "Oswald";
+
+        margin: 10px 0;
+      }
+
+      .page-links.show {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+
+    @media only screen and (min-width: 769px) {
+      .menu-button {
+        display: none;
+      }
+
+      .page-links {
+        margin-top: -50px;
+        font-family: "Oswald";
+        display: flex;
+      }
+    }
+
+    .container {
+
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      max-width: 800px;
+      align-self: center;
+      -ms-grid-row-align: center;
+      margin: 0 auto;
+      display: flexbox;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      align-self: center;
+
+      span {
+        font-family: "Koulen", serif;
+
+      }
+    }
+
+    .contact-links {
+      align-content: center;
+      text-align: center;
+      align-self: center;
+      color:red
+    }
+    
+
+    .contacth2 {
+      margin-top: 65px;
+      text-align: center;
+      font-family: "Oswald";
+      color: white;
+
+
+      font-size: 2.5em;
+    }
+
+    .contact.text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+
+    .koulen-regular {
+      font-family: "Koulen", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .bg-black {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    section {
+      align-self: center;
+      align-items: center;
+
+
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 200px;
+    }
+
+    img {
+      width: 25px;
+      aspect-ratio: auto 20 /20;
+      height: 25px;
+      color:red
+      
+    }
+
+    a {
+      font-size: 1.2em;
+      text-decoration: none;
+      font-family: 'Squada One';
+      cursor: pointer;
+      color: red;
+    }
+
+    .social-space {
+      width: 15px;
+      /* İstediğiniz genişlik */
+      display: inline-block;
+    }
+  </style>
+
+
+
+</head>
+
+
+<header>
+  <div class="logo">
+    <img src="assets/images/hopulogo.svg" alt="Logo">
+  </div>
+  <nav class="page-links">
+    <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="menu-button"><i class="fas fa-bars fa-lg"></i></div>
+</header>
+
+
+
+<body>
+
+
+
+  <section data-aos="fade-up"
+    class="bg-black px-[20px] md:px-[130px] py-20 lg:py-[120px] min-h-screen overflow-hidden z-10 aos-init aos-animate">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <div class="flex flex-wrap -mx-4 lg:justify-between">
+        <h2 class="contacth2">
+          GET IN TOUCH<br> WITH US</h2>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/hopu_agency/" target="_blank">
+            <img class="social-icon" src="assets/icons/instagram.svg" alt="Instagram Icon" width="20"
+              height="20">
+          </a>
+          <span class="social-space"></span>
+
+          <a href="mailto:info@ho-pu.co" target="_blank">
+            <img src="assets/icons/mail.svg" alt="Mail Icon" width="20" height="20">
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const menuButton = document.querySelector('.menu-button');
+    const pageLinks = document.querySelector('.page-links');
+    const container = document.querySelector('.container');
+
+    menuButton.addEventListener('click', () => {
+      pageLinks.classList.toggle('show');
+      if (pageLinks.classList.contains('show')) {
+        container.style.transform = 'translateY(' + pageLinks.clientHeight + 'px)';
+      } else {
+        container.style.transform = 'translateY(0)';
+      }
+    });
+  </script>
+</body>
+
+</html>

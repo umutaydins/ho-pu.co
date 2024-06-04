@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ho-Pu'</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Nanum+Myeongjo&family=Noto+Sans+Khojki&family=Squada+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+        .squada-one-regular {
+            font-family: "Squada One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Squad One';
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            font-family: "Oswald", sans-serif;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .logo img {
+
+            width: 140px;
+            height: 120px;
+            margin-top: -45px;
+        }
+
+        .page-links {
+            font-family: "Oswald";
+
+            display: flex;
+            font-weight: 500;
+            color: white;
+        }
+
+        .page-links a {
+            font-family: "Oswald";
+            font-weight: 1200;
+            font-size: 20px;
+            margin-left: 40px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+        .flat-button {
+
+
+            border: 2px solid red;
+            color: red;
+            background-color: transparent;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 20px 30px;
+            font-family: "Oswald";
+            text-decoration: none;
+
+        }
+
+        .flat-button:hover {
+            color: white;
+            background-color: red;
+        }
+
+
+        /* Responsive design */
+        @media only screen and (max-width: 768px) {
+            .page-links {
+                font-family: "Oswald";
+
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                /* Height of the header */
+                left: -20px;
+                width: 100%;
+                background-color: black;
+                text-align: right;
+                z-index: 1;
+
+            }
+
+            .page-links a {
+                font-family: "Oswald";
+
+            }
+
+            .page-links a {
+                font-family: "Oswald";
+
+                margin: 10px 0;
+            }
+
+            .page-links.show {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
+
+        @media only screen and (min-width: 769px) {
+            .menu-button {
+                display: none;
+            }
+
+            .page-links {
+                margin-top: -50px;
+                font-family: "Oswald";
+
+                display: flex;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: fit;
+            margin-top: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .row {
+                display: flex;
+                justify-content: center;
+
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+
+
+        .ArtistCart {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .card {
+            position: relative;
+            aspect-ratio: 5 / 7;
+            margin: 10px 0;
+            min-width: 300px;
+            perspective: 1200px;
+            overflow: hidden;
+        }
+
+        .card .cover {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .cover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+            position: absolute;
+
+            color: white;
+            font-size: 2.8em;
+            font-family: 'Squada One', cursive;
+
+
+        }
+
+        .squada-one-regular {
+            font-family: "Squada One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
+        .cover.item-a {
+            background-image: url("assets/images/yedi/analog.webp");
+        }
+
+        .cover.item-b {
+            background-image: url("assets/images/yedi/axl.webp");
+        }
+
+        .cover.item-c {
+            background-image: url("assets/images/yedi/elidani.webp");
+        }
+
+        .cover.item-d {
+            background-image: url("assets/images/kare/miaKare.jpg");
+        }
+
+        .cover.item-e {
+            background-image: url("assets/images/yedi/heik.webp");
+        }
+
+        .cover.item-f {
+            background-image: url("assets/images/yedi/wurtz.webp");
+        }
+    </style>
+
+</head>
+
+<header>
+    <div class="logo">
+        <img src="assets/images/hopulogo.svg" alt="Logo">
+    </div>
+    <nav class="page-links">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-button"><i class="fas fa-bars fa-lg"></i></div>
+</header>
+
+<body>
+
+    <div class="container">
+        <div class="card-container">
+            <section class="row">
+                <div class="ArtistCart">
+                    <a href="artists/analog.html" class="card-link">
+                        <div class="card">
+                            <div class="cover item-a">
+                                <h2>ANALOG CONTEXT</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ArtistCart">
+                    <a href="artists/axl.html" class="card-link">
+                        <div class="card">
+                            <div class="cover item-b">
+                                <h2>AXL STACE</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ArtistCart">
+                    <a href="artists/elidani.html" class="card-link">
+                        <div class="card">
+                            <div class="cover item-c">
+                                <h2>ELI & DANI</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="ArtistCart">
+                    <a href="artists/heik.html" class="card-link">
+                        <div class="card">
+                            <div class="cover item-e">
+                                <h2>HEÎK</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ArtistCart">
+                    <a href="artists/miaMandi.html" class="card-link">
+                        <div class="card">
+                            <div class="cover item-d">
+                                <h2>MIA MENDI</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="ArtistCart">
+                    <a href="artists/wurtz.html" class="card-link">
+                        <div class="card">
+                            <div class="cover item-f">
+                                <h2>WURTZ</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const pageLinks = document.querySelector('.page-links');
+        const container = document.querySelector('.container');
+
+        menuButton.addEventListener('click', () => {
+            pageLinks.classList.toggle('show');
+            if (pageLinks.classList.contains('show')) {
+                container.style.transform = 'translateY(' + pageLinks.clientHeight + 'px)';
+            } else {
+                container.style.transform = 'translateY(0)';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
