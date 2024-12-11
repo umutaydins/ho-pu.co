@@ -17,204 +17,205 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
 
-.squada-one-regular {
-font-family: "Squada One", sans-serif;
-font-weight: 400;
-font-style: normal;
-}
+    .squada-one-regular {
+      font-family: "Squada One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
-body {
-font-family: 'Squad One';
-margin: 0;
-padding: 0;
-background-color: black;
-color: white;
-}
+    body {
+      font-family: 'Squad One';
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+    }
 
-header {
-font-family: "Oswald", sans-serif;
+    header {
+      font-family: "Oswald", sans-serif;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-background-color: black;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+    }
 
-.logo img {
+    .logo img {
 
-width: 140px;
-height: 120px;
-margin-top: -45px;
-}
+      width: 140px;
+      height: 120px;
+      margin-top: -45px;
+    }
 
-.page-links {
-font-family: "Oswald";
+    .page-links {
+      font-family: "Oswald";
 
-display: flex;
-font-weight: 500;
-color: white;
-}
+      display: flex;
+      font-weight: 500;
+      color: white;
+    }
 
-.page-links a {
-font-family: "Oswald";
-font-weight: 1200;
-font-size: 20px;
-margin-left: 40px;
-color: white;
-text-decoration: none;
-}
-
-
-.flat-button {
+    .page-links a {
+      font-family: "Oswald";
+      font-weight: 1200;
+      font-size: 20px;
+      margin-left: 40px;
+      color: white;
+      text-decoration: none;
+    }
 
 
-border: 2px solid red;
-color: red;
-background-color: transparent;
-transition: color 0.3s, background-color 0.3s;
-padding: 20px 30px;
-font-family: "Oswald";
-text-decoration: none;
-
-}
-
-.flat-button:hover {
-color: white;
-background-color: red;
-}
+    .flat-button {
 
 
-/* Responsive design */
-@media only screen and (max-width: 768px) {
-.page-links {
-  font-family: "Oswald";
+      border: 2px solid red;
+      color: red;
+      background-color: transparent;
+      transition: color 0.3s, background-color 0.3s;
+      padding: 20px 30px;
+      font-family: "Oswald";
+      text-decoration: none;
 
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 60px; /* Height of the header */
-  left: -20px;
-  width: 100%;
-  background-color: black;
-  text-align: right;
-  z-index: 1;
+    }
 
-}
-
-.page-links a {
-font-family: "Oswald";
-
-}
-
-.page-links a {
-  font-family: "Oswald";
-
-  margin: 10px 0;
-}
-
-.page-links.show {
-  display: flex;
-}
-
-.menu-button {
-  display: block;
-
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-}
-}
-
-@media only screen and (min-width: 769px) {
-.menu-button {
-  display: none;
-}
-
-.page-links {
-  margin-top: -50px;
-  font-family: "Oswald";
-
-  display: flex;
-}
-}
+    .flat-button:hover {
+      color: white;
+      background-color: red;
+    }
 
 
-.container {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+      .page-links {
+        font-family: "Oswald";
 
-.profile-image img {
-max-width: 280px;
-margin-bottom: 20px;
-}
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Height of the header */
+        left: -20px;
+        width: 100%;
+        background-color: black;
+        text-align: right;
+        z-index: 1;
 
-.bio h1 {
-font-family: 'Squada One';
+      }
 
-text-align: center;
-font-size: 2.5em;
-font-weight: 800;
-margin-bottom: 12px;
-}
+      .page-links a {
+        font-family: "Oswald";
 
+      }
 
-p{
-margin-top: 0px;
-color: whitesmoke;
-font-family: "Noto Sans Khojki", sans-serif;
-margin-bottom: 0;
-text-align: justify;
-word-spacing: 0.1em;
+      .page-links a {
+        font-family: "Oswald";
 
-}
+        margin: 10px 0;
+      }
 
+      .page-links.show {
+        display: flex;
+      }
 
+      .menu-button {
+        display: block;
 
-.read-more a {
-display: inline-block;
-text-decoration: none;
-font-weight: 800;
-color: white;
-margin-top: 20px;
-text-align: center;
-width: 100%;
-}
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
 
-.links {
-font-weight: bold;
-font-size: 1.2em;
-text-align: center;
-margin-top: 4em;
+    @media only screen and (min-width: 769px) {
+      .menu-button {
+        display: none;
+      }
 
-}
+      .page-links {
+        margin-top: -50px;
+        font-family: "Oswald";
 
-.links a {
-display: inline-block;
-margin-right: 10px;
-text-decoration: none;
-color: red;
-transition: color 0.3s ease;
-font-size: 0.5em;
-}
-
-.links img {
-width: 20px;
-height: 20px;
-margin-right: 3px;
-margin-left:3px ;
+        display: flex;
+      }
+    }
 
 
-}
-</style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-image img {
+      max-width: 280px;
+      margin-bottom: 20px;
+    }
+
+    .bio h1 {
+      font-family: 'Squada One';
+
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+
+    p {
+      margin-top: 0px;
+      color: whitesmoke;
+      font-family: "Noto Sans Khojki", sans-serif;
+      margin-bottom: 0;
+      text-align: justify;
+      word-spacing: 0.1em;
+
+    }
+
+
+
+    .read-more a {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 800;
+      color: white;
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .links {
+      font-weight: bold;
+      font-size: 1.2em;
+      text-align: center;
+      margin-top: 4em;
+
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+      color: red;
+      transition: color 0.3s ease;
+      font-size: 0.5em;
+    }
+
+    .links img {
+      width: 20px;
+      height: 20px;
+      margin-right: 3px;
+      margin-left: 3px;
+
+
+    }
+  </style>
 
 </head>
 
@@ -272,8 +273,7 @@ margin-left:3px ;
         <a href="mailto:booking@ho-pu.co" target="_blank">
           <img src="../assets/icons/mail.svg" alt="Mail Icon" width="20" height="20">
         </a>
-        <a href="https://www.dropbox.com/sh/rsjfwqn74ixy9ah/AAB5d2Ft-5d5gboMWaRmZCWBa?dl=0"
-          target="_blank">
+        <a href="https://www.dropbox.com/sh/rsjfwqn74ixy9ah/AAB5d2Ft-5d5gboMWaRmZCWBa?dl=0" target="_blank">
           <img src="../assets/icons/downloadIcon.svg" alt="Download Icon" width="20" height="20">
         </a>
       </div>
